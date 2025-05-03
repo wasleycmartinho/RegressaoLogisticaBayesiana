@@ -16,7 +16,9 @@ $$\frac{\pi(x_{i})}{1 - \pi(x_{i})} = \exp(\bf{x}_{i}^{T} \bf{\beta})$$
 
 Em que **Y** será uma distribuição Bernoulli com parâmetros de sucesso $\pi(x_{i})$ e de fracasso $1 - \pi(x_{i})$. Assim, conclui-se que: 
 
-$$P(Y = 1| X = x_{i}) = \frac{\exp(\bf{x}_{i}^{T} \bf{\beta})}{1 + \exp(\bf{x}_{i}^{T} \bf{\beta})} \ \ e  \ \ P(Y = 0| X = x_{i}) = \frac{1}{1 + \exp(\bf{x}_{i}^{T} \bf{\beta})}$$
+$$P(Y = 1| X = x_{i}) = \frac{\exp(\bf{x}_{i}^{T} \bf{\beta})}{1 + \exp(\bf{x}_{i}^{T} \bf{\beta})}$$ 
+
+$$P(Y = 0| X = x_{i}) = \frac{1}{1 + \exp(\bf{x}_{i}^{T} \bf{\beta})}$$
 
 Para ser obtido bons ajustes nesse modelo é necessário que a variável resposta tenha observações independentes e que a relação entre o *logit* da probabilidade de sucesso e as variáveis explicativas seja linear. 
 
