@@ -3,7 +3,7 @@
 Material introdutório sobre Regressão Logística Bayesiana.
 
 ## Introdução
-
+<p align="justify">
 O **Modelo de Regressão Logística** (*MRL*) é bastante utilizado em estudos sobre modelos de classificação. Esse modelo não-linear é uma técnica estatística utilizada para relacionar uma variável resposta (**Y**) com suas possíveis variáveis explicativas (**X**), geralmente a variável resposta é binária. Destaca-se como vantagens de uso, a sua facilidade em cálculos matemáticos e a possibilidade de interpretação dos parâmentros, o que diferencia de outros modelos existentes. 
 
 No *MRL*, a variável resposta é ligada com as variáveis explicativas através de uma função de ligação denominada de *logit*. Em termos matemáticos, a função do modelo logístico é dado por: 
@@ -25,7 +25,7 @@ Para ser obtido bons ajustes nesse modelo é necessário que a variável respost
 Um dos problemas ao usar esse modelo está relacinado à possibilidade de usar variável resposta continuas de modo que seja necessário categorizar essa variável. Contudo, transformações desse tipo pode gerar problemas como incluir a seleção arbitrária do tamanho do intervalo e a seleção do ponto de corte o que pode ocasionar resultados menos precisos ou distorcidos. Com o objetivo de evitar esse problema, pode-se utilizar, como alternativa, o Modelo de Regressão Logística Bayesiana.  
 
 Existe duas filosofia em Estatística: a frequentista e a bayesiana. A diferença básica entre elas, é que a primeira considera que o parâmetro de estimação é um valor fixo desconhecido, enquanto que na segunda, considera que o parâmetro é uma variável aleatória. 
-
+</p>
 ## Referências
 1. Alves, 2019
 2. Souza et. al., 2006
