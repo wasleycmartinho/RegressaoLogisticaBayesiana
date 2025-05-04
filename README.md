@@ -16,7 +16,7 @@ $$\frac{\pi(x_{i})}{1 - \pi(x_{i})} = \exp(\bf{x}_{i}^{T} \bf{\beta})$$
 
 Em que **Y** será uma distribuição Bernoulli com parâmetros de sucesso $\pi(x_{i})$ e de fracasso $1 - \pi(x_{i})$. Assim, conclui-se que: 
 
-$$P(Y = 1| X = x_{i}) = \frac{\exp(\bf{x}_{i}^{T} \bf{\beta})}{1 + \exp(\bf{x}_{i}^{T} \bf{\beta})}$$ 
+$$P(Y = 1| X = x_{i}) = \frac{ \exp(\bf{x}_{i}^{T} \beta) }{1 + \exp(\bf{x}_{i}^{T} \bf{\beta})}$$ 
 
 $$P(Y = 0| X = x_{i}) = \frac{1}{1 + \exp(\bf{x}_{i}^{T} \bf{\beta})}$$
 
