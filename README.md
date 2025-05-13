@@ -24,7 +24,19 @@ Para ser obtido bons ajustes nesse modelo é necessário que a variável respost
 
 Um dos problemas ao usar esse modelo está relacinado à possibilidade de usar variável resposta continuas de modo que seja necessário categorizar essa variável. Contudo, transformações desse tipo pode gerar problemas como incluir a seleção arbitrária do tamanho do intervalo e a seleção do ponto de corte o que pode ocasionar resultados menos precisos ou distorcidos. Com o objetivo de evitar esse problema, pode-se utilizar, como alternativa, o Modelo de Regressão Logística Bayesiana.  
 
-Existe duas filosofia em Estatística: a frequentista e a bayesiana. A diferença básica entre elas, é que a primeira considera que o parâmetro de estimação é um valor fixo desconhecido, enquanto que na segunda, considera que o parâmetro é uma variável aleatória. 
+O **Modelo Logístico Bayesiano** é um considerado um caso especial da Análise Discriminante Linear quando as variáveis dos fatores são todas contínuas. Em termos de equação esse modelo não difere do sua versão Clássica sendo a principal diferença entre os dois, a forma como são estimados os coeficientes de regressão.
+
+Na versão clássica, usa-se para estimar os parâmetros o método de máxima verossimilhança, enquanto que na versão bayesiana, usa-se o método de máxima verossimilhança combinado com as informações à priori. Assim, a posteriori é proporcional a verossimilhança e a priori, conforme representação a seguir: 
+
+$$\pi(\beta|x) \propto l(x|\beta) \times \pi(\beta)$$
+
+É necessário identificar a distribuição a priori dos parâmetros do modelo, pois ela representa a informação inicial que foi observado nas amostras. Geralmente, usa-se a distribuição Gaussiana, Cauchy, Uniforme, Gama ou Gama Inversa como a priori.   
+
+De forma geral, os modelos bayesianos são complexos em termo de estimação dos parâmetros, com isso usa-se para estimar os parâmetros desse tipo de modelo Método de Cadeia de Markov de Monte Carlo (MCMC). O MCMC é uma amostrador de distribuições complexas sendo os mais conhecidos na literatura os amostradores de Metropolis-Hastings, Gibss Sampling e Hamiltonian Monte Carlo. 
+
+Para avaliação do Modelo Logístico Bayesiano pode-se usar as métricas de Acurácia, Precisão, Recall e  F1, assim como usar o gráfico da Curva Roc, além de sua métrica AUC-ROC. Além do intervalos de credibilidade, distribuição posterior preditiva e Log-Score.
+
+<!Existe duas filosofia em Estatística: a frequentista e a bayesiana. A diferença básica entre elas, é que a primeira considera que o parâmetro de estimação é um valor fixo desconhecido, enquanto que na segunda, considera que o parâmetro é uma variável aleatória.> 
 
 ## Referências
 1. Alves, 2019
