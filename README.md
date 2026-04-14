@@ -32,9 +32,11 @@ $$\pi(\beta|x) \propto l(x|\beta) \times \pi(\beta)$$
 
 É necessário identificar a distribuição a priori dos parâmetros do modelo, pois ela representa a informação inicial que foi observado nas amostras. Geralmente, aplica-se a distribuição Gaussiana, Cauchy, Uniforme, Gama ou Gama Inversa como a priori.   
 
-De forma geral, os modelos bayesianos são complexos em termo de estimação dos parâmetros, com isso para estimar os parâmetros desse tipo de modelo é utilziado o Método de Cadeia de Markov de Monte Carlo (MCMC). O MCMC é uma amostrador de distribuições complexas sendo os mais conhecidos na literatura os amostradores de Metropolis-Hastings, Gibss Sampling e Hamiltonian Monte Carlo. 
+De forma geral, os modelos bayesianos são complexos em termo de estimação dos parâmetros, com isso para estimar os parâmetros desse tipo de modelo é utiliziado o Método de Cadeia de Markov de Monte Carlo (MCMC). O MCMC é uma amostrador de distribuições complexas sendo os mais conhecidos na literatura os amostradores de Metropolis-Hastings, Gibss Sampling e Hamiltonian Monte Carlo. 
 
 Para avaliação do Modelo Logístico Bayesiano pode-se usar as métricas de Acurácia, Precisão, Recall e  F1, assim como usar o gráfico da Curva Roc, além de sua métrica AUC-ROC. Além do intervalos de credibilidade, distribuição posterior preditiva e Log-Score.
+
+## Dados de Aplicação
 
 <!Existe duas filosofia em Estatística: a frequentista e a bayesiana. A diferença básica entre elas, é que a primeira considera que o parâmetro de estimação é um valor fixo desconhecido, enquanto que na segunda, considera que o parâmetro é uma variável aleatória.> 
 
@@ -43,3 +45,5 @@ Para avaliação do Modelo Logístico Bayesiano pode-se usar as métricas de Acu
 2. Souza et. al., 2006
 3. Bezerra et. al., 2018
 4. Marshall eta al. 1994
+5. Hassan, 2020
+6. Mendes, 2022
